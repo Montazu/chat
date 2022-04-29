@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="chat">
+      <div class="chat__box"></div>
+      <form class="chat__form" action="javascript:sendMessage()">
+        <textarea
+          class="chat__form__textarea"
+          rows="1"
+          placeholder="Wyślij wiadomość"
+          required
+        ></textarea>
+        <input class="chat__form__button" type="submit" value="Rozmawiaj" />
+      </form>
+    </div>
+    <script
+      src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+      integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
