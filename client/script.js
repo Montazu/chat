@@ -2,7 +2,7 @@ const messageBox = document.querySelector(".chat__form__textarea");
 const chat = document.querySelector(".chat__box");
 const fragment = document.createDocumentFragment();
 
-const socket = io.connect("http://192.168.1.50:8080/");
+const socket = io.connect("http://77.55.214.134");
 socket.on("connect", () => {
   console.log(`Connection: ${socket.connected}`);
 });
