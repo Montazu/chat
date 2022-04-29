@@ -2,7 +2,7 @@ const messageBox = document.querySelector(".chat__form__textarea");
 const chat = document.querySelector(".chat__box");
 const fragment = document.createDocumentFragment();
 
-const socket = io.connect("https://chat.montazu.pl/");
+const socket = io.connect("https://chat-server.montazu.pl/");
 socket.on("connect", () => {
   console.log(`Connection: ${socket.connected}`);
 });
